@@ -1456,7 +1456,7 @@ a:hover, .sys_txt a:hover, .sys_layout a:hover {text-decoration: underline;}
         output += '<div class="col-sm-6 col-md-4' + visibleSm + '" >';
         output += '<div class="blog-post" ><header>';
         
-        var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
+        var tagIndex = item.description.indexOf("<	"); // Find where the img tag starts
         var srcIndex =
           item.description.substring(tagIndex).indexOf("src=") + tagIndex; // Find where the src attribute starts
         var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
@@ -1464,7 +1464,7 @@ a:hover, .sys_txt a:hover, .sys_layout a:hover {text-decoration: underline;}
           item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
         var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
         output +=
-          '<div class="blog-element" style="height:300px;  position: relative;" ><a href="'+item.link +'" target="_blank"><img class="img-responsive" src="' +
+          '<div class="blog-element" style="height:300px;  position: relative;" ><a href="'+item.link +'" target="_blank"><img alt="'+item.title+'" class="img-responsive" src="' +
           src +
           '" width="480px" height="360px" style="position: absolute;  top: 50%;  height: 300px;  margin-top:-150px;"></a></div></header>';
         output +=
@@ -1648,7 +1648,7 @@ a:hover, .sys_txt a:hover, .sys_layout a:hover {text-decoration: underline;}
         </div> <!-- #sys_background / .bg_overlay -->
         <div style="color:black">
 		<p>
-		Türkiye Türk Turkiye Turk Turkey Blockchainturknet Blockchainturk Blockchain Block chain kripto crypto kriptopara cyryptocoin dijital para dijitalpara btc bitcoin litecoin kucoin cryptocurrency ethereum ripple trading ETH IOTA bitcoinmining monero neo bitcoinnews coinbase binance digitalcurrency altcoin eth altcoins mining staking proof of work stake trust bitcoincash exchange developer yazılım geliştirici r3 corda hyperledger distributed ledger technoloji dağıtık merkezi merkezsiz blog linkedin facebook twitter instagram smart contract akıllı kontrat servis şifreleme hash encryption decryption sha sha256 future UTXO DLT Merkle Root Tree previous nonce public private permissioned permissionless semi kahin oracle fabric composer quilt explorer cello solidity indy struct değer para age of coinbase mempool dash neo novacoin simetrik symmetric asimetrik asymmetric sign verification doğrulama imzalama rsa des dsa ellipric curve ECDSA diffie hellman chain core quorum azure blockchain IBM bluemix oracle SAP amazon block block chiper AES unspent transaction output consensus double spend problem byzantine general problem bizans general problemi mutabakat hemfikir vitalik buterin satoshi
+		Türkiye Türkiye Türk Türk Turkiye Turkiye Turk Turk Turkey Blockchainturknet Blockchainturk blockchainturk developer platform Blockchain Block chain kripto crypto kriptopara cyryptocoin dijital para dijitalpara btc bitcoin litecoin kucoin cryptocurrency ethereum ripple trading ETH IOTA bitcoinmining monero neo bitcoinnews coinbase binance digitalcurrency altcoin eth altcoins mining staking proof of work stake trust bitcoincash exchange developer yazılım geliştirici r3 corda hyperledger distributed ledger technoloji dağıtık merkezi merkezsiz blog linkedin facebook twitter instagram smart contract akıllı kontrat servis şifreleme hash encryption decryption sha sha256 future UTXO DLT Merkle Root Tree previous nonce public private permissioned permissionless semi kahin oracle fabric composer quilt explorer cello solidity indy struct değer para age of coinbase mempool dash neo novacoin simetrik symmetric asimetrik asymmetric sign verification doğrulama imzalama rsa des dsa ellipric curve ECDSA diffie hellman chain core quorum azure blockchain IBM bluemix oracle SAP amazon block block chiper AES unspent transaction output consensus double spend problem byzantine general problem bizans general problemi mutabakat hemfikir vitalik buterin satoshi platform 
 		<p>
 		</div>
     
