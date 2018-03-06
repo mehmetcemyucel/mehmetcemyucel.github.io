@@ -1497,11 +1497,14 @@ a:hover, .sys_txt a:hover, .sys_layout a:hover {text-decoration: underline;}
       var output = "";
       $.each(response.items, function(k, item) {
         var visibleSm;
-        if (k < 3) {
+        if (k < 9) {
           visibleSm = "";
         } else {
           visibleSm = " visible-sm";
         }
+	if(k=2){
+	output+='<br>';	
+	}
         output += '<div class="col-sm-6 col-md-4' + visibleSm + '" >';
         output += '<div class="blog-post" ><header>';
         
